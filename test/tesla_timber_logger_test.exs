@@ -74,10 +74,7 @@ defmodule TeslaTimberLoggerTest do
       plug Tesla.Middleware.TimberLogger, log_level: &log_level/1
 
       defp log_level(env) do
-        cond do
-          env.status >= 400 && env.status < 500 -> :warn
-          true -> :default
-        end
+        if env.status >= 400 && env.status < 500, do: :warn, else: :default
       end
 
       adapter fn env ->
