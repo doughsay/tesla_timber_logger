@@ -5,7 +5,7 @@ defmodule TeslaTimberLogger.MixProject do
     [
       app: :tesla_timber_logger,
       version: "0.1.0",
-      elixir: "~> 1.5",
+      elixir: "~> 1.6",
       start_permanent: Mix.env() == :prod,
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
