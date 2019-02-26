@@ -49,7 +49,7 @@ defmodule TeslaTimberLogger.MixProject do
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:excoveralls, "~> 0.9", only: :test},
       {:tesla, "~> 1.0"},
-      {:timber, "~> 2.8"}
+      {:timber, "~> 3.1"}
     ]
   end
 end
